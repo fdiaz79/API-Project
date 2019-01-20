@@ -33,6 +33,7 @@ $(document).ready(function(){
             $("#buttons-panel").append(but);
             $("#buttons-panel").append(pVar);
         }
+        $("#buttons-panel").append(pVar);
     };
 
     $("#add-button").on("click", function(event){
