@@ -31,7 +31,7 @@ $(document).ready(function(){
             but.attr("title", qtyArr[i] + " gifs per click");
             but.addClass("buttonGen");
             $("#buttons-panel").append(but);
-            $("#buttons-panel").append(pVar);
+            
         }
         $("#buttons-panel").append(pVar);
     };
