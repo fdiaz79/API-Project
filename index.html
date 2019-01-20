@@ -8,7 +8,10 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"> -->
+        <link href="assets/css/bootstrap-toggle.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+        
 
         <!-- Added link to the jQuery Library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,68 +19,84 @@
 
 
     <body>
+        <div class="jumbotron">
+            <h1 class="text-center">ROCK BAND GIF GENERATOR</h1>
+        </div>
         <div class="container-fluid">
             <div class="row rowInput" id="input">
-                <div class="col-md-7" id="buttons-panel">
+                <div class="col-md-7">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            GIFS GENERATOR PANEL
+                        </div>
+                        <div class="card-body" id="buttons-panel">
+                            
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col-md-5">
-                    <form>
-                        <div class="form-group">
-                            <label for="bandInput"> Name of the rock band you need gif:</label>
-                            <input type="text" class="form-control" id="bandInput" placeholder="Rock Band">
-                        </div>     
-                        <div class="form-group">
-                            <label for="gifQuantity">How many gifs do you want?</label>
-                            <select class="form-control" id="gifQuantity">
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
+                    <div class="card card-default">
+                        <div class="card-header">
+                            BUTTON CREATOR PANEL
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="bandInput"> Name of the rock band you need to generate gifs:</label>
+                                    <input type="text" class="form-control" id="bandInput" placeholder="Rock Band">
+                                </div>     
+                                <div class="form-group">
+                                    <label for="gifQuantity">How many gifs do you want?</label>
+                                    <select class="form-control" id="gifQuantity">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div> 
+                                
+                                <br>
+                                
+                                <button type="submit" class="btn btn-primary" id="add-button">Add button</button>
+                                <input type="checkbox" data-toggle="toggle" id="delete-buttons" data-size="normal" data-onstyle="danger" data-offstyle="primary">
+                                <label class="form-check-label" for="delete-buttons">
+                                    Click to delete band button option is <span id="db-span"> </span>.
+                                </label>
+ 
+                            </form>
+                            
                         </div> 
-                        <!-- <div id="ratings">
-                            Ratings desired:
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gRat" value="g" checked>
-                                <label class="form-check-label" for="gRat">
-                                    g Rating
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="pg13Rat" value="pg-13">
-                                <label class="form-check-label" for="pg13Rat">
-                                    pg-13 Rating
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="pgRat" value="pg">
-                                <label class="form-check-label" for="pgRat">
-                                    pg Rating
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="yRat" value="y">
-                                <label class="form-check-label" for="yRat">
-                                    y Rating
-                                </label>
-                            </div>
-                        </div> -->
-                        <br>
-                        
-                        <button type="submit" class="btn btn-primary" id="add-button">Add button</button>
-                    </form>                    
+                    </div>                   
                 </div>
             </div>
-            <div class="row rowInput" id="gif-display">
+            <div class="row rowInput">
+                <div class="col-12">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            GIF VIEWER
+                        </div>
+                        <div class="row" id="gif-display">
 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <script type="text/javascript" src="assets/javascript/script.js"></script>
+        <script type="text/javascript" src="assets/javascript/toggle.js"></script>
+        <!-- <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
+        
     </body>
 
 </html>

@@ -2,6 +2,23 @@
     padding: 1%;
 }
 
-.buttonGen{
+.buttonGen {
     margin: 1%;
+}
+
+.jumbotron {
+    margin: 2% 2% 0% 2%;
+}
+
+#gif-display {
+    margin: 1%;
+}
+
+.form-check-label {
+    font-size: smaller;
+}
+
+#db-span {
+    color: #007bff;
+    font-weight: bolder;
 }
